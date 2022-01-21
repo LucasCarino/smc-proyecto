@@ -4,11 +4,11 @@ import './assets/css/main.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 import Home from './components/Home/Home';
-import Nosotros from './components/Nosotros';
-import Servicios from './components/Servicios';
+import Equipo from './components/Equipo/Equipo';
+import Servicios from './components/Servicios/Servicios';
 import Portfolio from './components/Portfolio';
-import Clientes from './components/Clientes';
-import Equipo from './components/Equipo';
+import Clientes from './components/Clientes/Clientes';
+import Nosotros from './components/Nosotros/Nosotros';
 import Contacto from './components/Contacto';
 
 import NavBar from './components/NavBar/NavBar';
@@ -20,7 +20,6 @@ class App extends Component {
     return (
       <BrowserRouter>
         <SocialBar />
-        <div className='container'>
         <NavBar />
         <Routes>
           <Route element={<Home />} path='/' />
@@ -31,7 +30,6 @@ class App extends Component {
           <Route element={<Equipo />} path='/equipo' />
           <Route element={<Contacto />} path='/contacto' />
         </Routes>
-        </div>
       </BrowserRouter>
     )
   }

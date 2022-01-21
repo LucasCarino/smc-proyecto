@@ -12,10 +12,6 @@ class NavBar extends Component {
         return (
             <React.Fragment>
                 <nav className="SocialItems">
-                    {/* <h1 className="navbar-logo">Logo<i className="fab fa-react"></i></h1> */}
-                    {/* <div className="menu-icon" onClick={this.handleClick}>
-                        <i className={this.state.clicked ? 'fas fa-times' : 'fas fa-bars'}></i>
-                    // </div> */}
                     <ul className={this.state.clicked ? 'social-bar active' : 'social-bar'}>
                         <div className='social-icons' >
                             {SocialItems.map((item, index) => {
