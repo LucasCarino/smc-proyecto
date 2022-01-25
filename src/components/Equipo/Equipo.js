@@ -7,12 +7,12 @@ export default function Equipo() {
         <React.Fragment>
             <div className="container">
                 <hr className="hr mb-3" />
-                <h2 className="text-danger m-0 fw-bold">Equipo</h2>
-                <div className="d-flex flex-wrap justify-content-between">
+                <h2 className="text-danger m-0 pb-3 fw-bold h1">Equipo</h2>
+                <div className="row bs-gutter-x-1 pb-5 mb-5">
                     {EquipoItems.map((item, index) => {
                         return (
                             <div className={item.cName}>
-                                <img src={require("../../assets/img/" + item.image)} alt={item.alt} className="img-fluid img-nosotros h-50 w-100 mb-4" />
+                                <img src={require("../../assets/img/" + item.image)} alt={item.alt} className="img-nosotros w-100 mb-4" />
                                 <h3 className="text-danger fw-bold">{item.name}</h3>
                                 <h3 className="fw-bold mb-3">{item.position}</h3>
                                 {item.team.map((name) => (

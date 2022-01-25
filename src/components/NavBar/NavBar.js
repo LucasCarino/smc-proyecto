@@ -15,9 +15,10 @@ class NavBar extends Component {
         return (
             <React.Fragment>
                 <div className='container'>
-                    <nav className="NavBarItems mt-4 mb-4">
-                        {/* <h1 className="navbar-logo">Logo<i className="fab fa-react"></i></h1> */}
-                        <NavLink to="/"><img src={logo} alt="Logo" className='navbar-logo' /></NavLink>
+                    <nav className="NavBarItems">
+                        <div className='w-25 d-flex align-items-center'>
+                            <NavLink to="/"><img src={logo} alt="Logo" className='img-fluid navbar-logo' /></NavLink>
+                        </div>
                         <div className="menu-icon" onClick={this.handleClick}>
                             <i className={this.state.clicked ? 'fas fa-times' : 'fas fa-bars'}></i>
                         </div>
@@ -26,11 +27,9 @@ class NavBar extends Component {
                                 return (
                                     <li>
                                         <NavLink className={item.cName} to={item.url}
-
                                             style={({ isActive }) => ({
-                                                color: isActive ? 'black' : 'red',
+                                                color: isActive ? 'rgb(100, 100, 100)' : 'red',
                                             })} >
-
                                             {item.title}
                                         </NavLink>
                                     </li>

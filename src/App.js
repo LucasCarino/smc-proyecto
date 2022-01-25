@@ -6,10 +6,10 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import Home from './components/Home/Home';
 import Equipo from './components/Equipo/Equipo';
 import Servicios from './components/Servicios/Servicios';
-import Portfolio from './components/Portfolio';
+import Portfolio from './components/Portfolio/Portfolio';
 import Clientes from './components/Clientes/Clientes';
 import Nosotros from './components/Nosotros/Nosotros';
-import Contacto from './components/Contacto';
+import Contacto from './components/Contacto/Contacto';
 
 import NavBar from './components/NavBar/NavBar';
 import SocialBar from './components/SocialBar/SocialBar';

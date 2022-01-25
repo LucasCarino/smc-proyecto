@@ -32,6 +32,6 @@ export const MenuItems = [
     {
         title: 'Contacto',
         url: '/contacto',
-        cName: 'nav-links'
+        cName: 'nav-links me-0-custom'
     },
 ]

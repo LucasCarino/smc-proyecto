@@ -17,9 +17,9 @@ class NavBar extends Component {
                             {SocialItems.map((item, index) => {
                                 return (
                                     <li>
-                                        <NavLink className={item.cName} to={item.url}>
+                                        <a className={item.cName} href={item.url} target="_blank">
                                             {item.title}
-                                        </NavLink>
+                                        </a>
                                     </li>
                                 )
                             })}

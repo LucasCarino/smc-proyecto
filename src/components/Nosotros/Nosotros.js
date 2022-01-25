@@ -3,9 +3,9 @@ import React from "react";
 export default function Nosotros() {
     return (
         <React.Fragment>
-            <div className="container me-0 custom-container">
+            <div className="container me-0 custom-container mb-5">
                 <div className="bg_image">
-                    <h2 className="text-white pt-4 pb-3 ps-4">Nosotros</h2>
+                    <h2 className="text-white pt-4 pb-3 ps-4 fw-bold h1">Nosotros</h2>
                     <hr className="hr-nosotros"/>
                     <h2 className="text-white pt-4 pb-3 ps-4">
                         En SMC potenciamos la<br/>

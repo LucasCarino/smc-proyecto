@@ -1,17 +1,40 @@
+@font-face { font-family: AlteHaasGrostek; src: url('../fonts/AlteHaasGroteskRegular.ttf'); } 
+@font-face { font-family: AlteHaasGrostek; font-weight: bold; src: url('../fonts/AlteHaasGroteskBold.ttf'); } 
+
 * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    font-family: AlteHaasGrostek;
 }
 
 .hr {
-    border-top: 6px solid red;
+    background: linear-gradient(90deg, rgba(189,0,0,1) 43%, rgba(93,37,37,1) 72%, rgba(41,28,28,1) 91%);
+    height: 6px !important;
     opacity: 1;
-    margin: 0px;
+    margin: 0px !important;
 }
 
 ol, ul {
     padding-left: 0px !important;
+}
+
+.me-0-custom {
+    margin-right: 0px !important;
+}
+
+.bs-gutter-x-1 {
+    --bs-gutter-x: 1rem !important;
+}
+
+.pe-0-custom {
+    padding-right: 0px !important;
+    padding: 0.5rem;
+}
+
+.ps-0-custom {
+    padding-left: 0px !important;
+    padding: 0.5rem;
 }
 
 /* SOCIAL-BAR */
@@ -50,13 +73,14 @@ ol, ul {
     justify-content: space-between;
     font-size: 1rem;
     width: 100%;
+    margin-top: 2.5rem;
+    margin-bottom: 2.5rem;
 }
 
 .navbar-logo {
     justify-self: start;
     cursor: pointer;
-    width: 100%;
-
+    width: 60%;
 }
 
 fa-react {
@@ -67,8 +91,9 @@ fa-react {
 .nav-links {
     color: red;
     text-decoration: none;
-    padding: 0.3rem 1rem;
+    margin: 0px 18px;
     font-weight: bold;
+    font-size: 18px;
 }
 
 .nav-links:hover {
@@ -114,11 +139,9 @@ fa-react {
 
 .img-nosotros {
     object-fit: cover;
+    height: 350px;
+    object-position: center;
 }
-
-/* .bg-nosotros {
-    background: rgba(192, 0, 0, 0.493)
-} */
 
 .bg_image {
     min-height:100%;
@@ -138,10 +161,39 @@ fa-react {
     opacity: 1;
     margin: 0px;
 }
+
+/* EQUIPO */
+
+/* SERVICIOS */
+
+.servicios-logo {
+    height: 200px;
+    object-fit: scale-down;
+}
+
+.servicios-icon {
+    object-fit: scale-down;
+    height: 30px;
+}
+
+
 @media screen and (max-width: 960px) {
+
+    .pe-0-custom {
+        padding-right: 0.5rem !important;
+        padding: 0.5rem;
+    }
+    
+    .ps-0-custom {
+        padding-left: 0.5rem !important;
+        padding: 0.5rem;
+    }
+    
     .NavBarItems {
         position: relative;
         height: 90px;
+        margin-top: 1.5rem;
+        margin-bottom: 1.5rem;
     }
 
     .nav-menu {
@@ -157,7 +209,7 @@ fa-react {
     }
 
     .nav-menu.active {
-        background: black;
+        background: linear-gradient(90deg, rgba(65,65,65,1) 15%, rgba(31,17,17,1) 39%, rgba(34,0,0,1) 70%);
         left: 0;
         opacity: 1;
         transition: all 0.5s ease;
@@ -166,10 +218,12 @@ fa-react {
     }
 
     .nav-links {
+        margin: 0px;
         text-align: center;
         padding: 1.4rem;
         width: 100%;
         display: table;
+        padding: 1.4rem !important;
     }
 
     .nav-menu.active li {
@@ -178,15 +232,14 @@ fa-react {
 
     .nav-links:hover{
         color: black;
-        background-color: red;
+        background-color: rgba(255, 0, 0, 0.384);
         border-radius: 0;
     }
 
     .navbar-logo {
-        position: absolute;
         top: 0;
         left: 0;
-        width: auto;
+        width: 100%;
     }
 
     .menu-icon {
@@ -215,6 +268,11 @@ fa-react {
         text-decoration: none;
         color: #fff;
         font-size: 1.5rem;
+    }
+
+    .custom-container {
+        max-width: 100% !important;
+        padding-right: var(--bs-gutter-x,.75rem) !important;
     }
 
     .nav-links-mobile:hover {
