@@ -25,8 +25,8 @@ class NavBar extends Component {
                         <ul className={this.state.clicked ? 'nav-menu active' : 'nav-menu'}>
                             {MenuItems.map((item, index) => {
                                 return (
-                                    <li>
-                                        <NavLink className={item.cName} to={item.url}
+                                    <li key={index}>
+                                        <NavLink className={item.cName} to={item.url} 
                                             style={({ isActive }) => ({
                                                 color: isActive ? 'rgb(100, 100, 100)' : 'red',
                                             })} >

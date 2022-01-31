@@ -2,7 +2,7 @@ import React from "react";
 
 import Works from "./Works";
 
-// import img_test from "../../assets/img/imagen_prueba.png"
+import img_test from "../../assets/img/index_bg.png"
 
 import video from "../../assets/img/SMC360-Credenciales.mp4"
 
@@ -16,7 +16,7 @@ export default function Home() {
                 <hr className="hr" />
                 <div>
                     {/* <img src={img_test} className="w-100" /> */}
-                    <video className="w-100 mb-3" autoPlay muted>
+                    <video className="w-100 mb-3" poster={img_test} muted autoPlay>
                         <source className="w-100" src={video} type="video/mp4" />
                     </video>
                 </div>

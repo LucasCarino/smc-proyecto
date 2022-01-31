@@ -11,9 +11,9 @@ export default function Servicios() {
                 <div className="row pb-5 mb-5">
                     {ServiciosItems.map((item, index) => {
                         return (
-                            <div className={item.cName}>
+                            <div className={item.cName} key="1">
                                 <div>
-                                    <img src={require("../../assets/img/" + item.image)} alt={item.alt} className="mb-4 p-3 w-100 servicios-logo" />
+                                    <img src={require("../../assets/img/" + item.image)} alt={item.alt} className="mb-4 p-4 w-100 servicios-logo" />
                                 </div>
                                 <div>
                                     <img src={require("../../assets/img/" + item.icon)} alt={item.alt} className="servicios-icon mb-3"/>
