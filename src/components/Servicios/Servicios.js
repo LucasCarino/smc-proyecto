@@ -19,7 +19,7 @@ export default function Servicios() {
                                     <img src={require("../../assets/img/" + item.icon)} alt={item.alt} className="servicios-icon mb-3"/>
                                 </div>
                                 <div>
-                                    <h3 className="text-danger fw-bold h2">{item.service}</h3>
+                                    <h4 className="text-danger fw-bold">{item.service}</h4>
                                     <p className="mb-3">{item.description}</p>
                                 </div>
                             </div>
